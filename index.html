@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+    @media print {
+      #skills{display:none;}
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+      .jobs header{
+        flex-direction: column;
+      }
+      .jobs header >h3,
+      .jobs header >h4,
+      .jobs header >span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+        <h1>高振超</h1> <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3564768384,3788948434&fm=26&gp=0.jpg" alt=""
+            width="100" height="100">
+        <p> 男 | 21岁 | WEB前端开发实习生 | 大连 </p>
+        <p> 手机：18904201315 | 微信：jiaoyuezzz | 邮箱：785276471@qq.com </p>
+    </section>
+    <section class="others">
+      <h2>个人博客，Github</h2>
+      <a href="http://www.gaozhenchao.cn/">自己搭建的个人博客</a>
+      <a href="https://github.com/Starlogzzz">我的 GitHub</a>
+  </section>
+    <section class="projects">
+        <section class="education">
+            <h2>教育经历</h2>
+            <p> <span><time>2017年</time>~<time>2021年</time></span> 大连交通大学 软件工程 本科 2021年6月毕业 </p>
+        </section>
+        <section class="skills">
+          <h2>技能</h2>
+          <div class="wrapper">
+              <div id="skills"></div>
+              <ul>
+                  <li>熟练使用<strong>HTML、CSS、原生JS等技术</strong>，能独立分析和解决一些基础问题</li>
+                  <li>熟悉 <strong>ES6</strong> ，包括 let / Promise / await / 析构赋值</li>
+                  <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+                  <li>掌握<strong>Bootstrap</strong>，<strong>jQuery</strong> 使用方法 </li>
+                  <li>了解 <strong>Node.js</strong>，<strong>express</strong>，<strong>Mongodb</strong> 的基本使用方法 </li>
+                  <li>了解 <strong>canvas</strong>绘画工具，熟练使用 <strong>Git</strong> 托管代码 </li>
+              </ul>
+          </div>
+      </section>
+        <h2>项目经历</h2>
+        <ol>
+            <!-- 项目1 -->
+            <li>
+                <header>
+                    <h3>购物街移动端</h3> <span> <a href="https://github.com/Starlogzzz/supermail">源码链接</a> </span>
+                </header>
+                <p> 这是一个基于 <strong>Vue全家桶</strong> 包括 <strong>Vue-cli Vuex vue-router</strong> 的移动端购物街应用。 </p>
+                <p> 本项目遵循组件化开发思想，单独功能模块全部抽离。使用vuex进行状态管理，使用中央事件总线进行非父子组件通信。</p>
+                <p> 制作本项目让我学习到了很多编程思想，尤其是组件化思想。并且让我掌握了vue的使用方法。 </p>
+                <strong>由于本项目使用vue-router的history模式，但gitee page不支持，所以暂无项目预览</strong>
+            </li>
+            <!-- 项目2 -->
+            <li>
+                <header>
+                    <h3>活力电商后台管理系统</h3> <span> <a href="https://github.com/Starlogzzz/vue_shop">源码链接</a></span>
+                </header>
+                <p> 一款基于 <strong>Vue</strong> / <strong>Element UI</strong> / <strong>Axios</strong> / <strong>ECharts</strong> 开发的 后台管理系统。
+                </p>
+                <p> 主要使用Element ui组件库进行开发，主要实现简单的进行数据交互,实现用户信息,商品信息的增删改查,用户权限
+                  的分配等。 </p>
+                <p> 制作过程让我更加熟练使用组件库。 并且学习到了项目打包上线所需相关优化方法。 </p>
+                <strong>由于本项目使用vue-router的history模式，但gitee page不支持，所以暂无项目预览</strong>
+            </li>
+
+            <li>
+                <header>
+                    <h3>Vue拟态计算器</h3> <span> <a href="https://github.com/Starlogzzz/vue-calculator">源码链接</a> <a href="http://gao_zhen_chao.gitee.io/vue-calculator/">项目预览</a> </span>
+                </header>
+                <p> 一个基于 <strong>Vue</strong> 使用 <strong>Grid</strong> 布局开发的简单拟态计算器。 </p>
+                <p> 这是我学习完Vue之后，通过Grid布局实现的一个最近很火的<strong>拟态</strong>计算器。用户体验很棒。 </p>
+                <p> 该项目通过vue实现计算器的功能，让我了解到了一部分功能的实现逻辑。加强了我的编码能力 </p>
+            </li>
+            <li class="page2">
+              <header>
+                  <h3>炫酷登录窗口</h3> <span> <a href="https://github.com/Starlogzzz/login-">源码链接</a> <a
+                          href="http://gao_zhen_chao.gitee.io/login-/">项目预览</a> </span>
+              </header>
+              <p>这是我在学习 <strong>CSS3动画</strong>和<strong>jQuery</strong> 之后制作的一个登录窗口</p>
+              <p>从此之后我喜爱上了各种新奇，有创意的设计，并加以练习。</p>
+          </li>
+        </ol>
+    </section>
+
+
+    <!-- <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+            <li class="page2">
+                <header>
+                    <h3>炫酷登录窗口</h3> <span> <a href="https://github.com/Starlogzzz/login-">源码链接</a> <a
+                            href="http://gao_zhen_chao.gitee.io/login-/">项目预览</a> </span>
+                </header>
+                <p>这是我在学习 <strong>CSS3动画</strong>和<strong>jQuery</strong> 之后制作的一个登录窗口</p>
+            </li>
+        </ul>
+    </section> -->
+    <section class="openSource">
+      <h2>个人优势</h2>
+      <strong>有良好的学习自驱能力</strong> <br>
+      <strong>责任心较强，有良好的团队协作精神</strong> <br>
+      <strong>关注前端热点话题，经常逛知乎和掘金等开发者论坛</strong>
+  </section>
+    
+    
+</article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
