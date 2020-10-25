@@ -19,7 +19,7 @@ var option = {
         { name: '编程基础', max: 100},
         { name: 'JS', max: 100},
         { name: 'Vue', max: 100},
-        { name: '项目开发', max: 100},
+        { name: 'React', max: 100},
         { name: '沟通能力', max: 100}
       ]
   },
@@ -29,7 +29,7 @@ var option = {
       // areaStyle: {normal: {}},
       data: [
           {
-              value: [80, 85, 90, 80, 80, 70],
+              value: [80, 85, 85, 80, 80, 70],
               name: '能力雷达'
           }
       ]
